@@ -8,7 +8,7 @@ class Counter extends StatefulWidget {
 }
 
 class _CounterState extends State<Counter> {
-  String message = 'Hello friends';
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class _CounterState extends State<Counter> {
       ),
       body: Center(
         child: Text(
-          message,
+          'Counter = $count',
           style: TextStyle(fontSize: 22, color: Colors.pink[700]),
         ),
       ),
@@ -26,11 +26,7 @@ class _CounterState extends State<Counter> {
         onPressed: () {
           setState(() {
             //debugPrint('test');
-            if (message == 'Hello friends') {
-              message = 'Hello me';
-            } else {
-              message = 'Hello friends';
-            }
+            count++;
           });
         },
         backgroundColor: const Color.fromARGB(255, 255, 0, 255),
