@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/week4/basic.dart';
+import 'package:flutter_application/week4/counter.dart';
 
 void main() {
-  runApp(MaterialApp(home: Basic()));
+  runApp(MaterialApp(home: Counter()));
 }
