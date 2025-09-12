@@ -74,6 +74,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Sevillana
+      fonts:
+        - asset: fonts/Sevillana-Regular.ttf
     - family: IndieFlower
       fonts:
         - asset: fonts/IndieFlower-Regular.ttf
